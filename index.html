@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -13,39 +14,46 @@
 		</div>
     </header>
     <main class="todo-app__main-controls">
-    	<section class="main-controls__first-item">
+    	<section>
 			<input type="checkbox" name="HTML" aria-label="edit HTML variant" checked>
             <span aria-label="HTML">HTML</span>
-    	    <button>&times</button></p>
+    	    <button aria-label="close HTML task">&times</button></p>
         </section>
-        <section class="main-controls__second-item">
+        <section>
 			<input type="checkbox" name="CSS" aria-label="edit CSS variant" checked>
   			<span><s>CSS</s></span> 
-  			<button>&times</button></p>
+  			<button aria-label="close CSS task">&times</button></p>
         </section>
-        <section class="main-controls__third-item">
+        <section>
   			<input type="checkbox" name="JS" aria-label="edit JS variant" checked>
   			<span>JS</span>
-  			<button>&times</button></p>
+  			<button aria-label="close JS task">&times</button></p>
         </section>
-        <section class="main-controls__fourth-item">
+        <section>
   			<input type="checkbox" name="JStools" aria-label="edit JS tools variant" checked>
   			<span>JS tools</span>
-  			<button>&times</button></p>
+  			<button aria-label="close JS tools task">&times</button></p>
         </section>  
     </main>
     <footer class="todo-app__actions-bar">
-  		<span>3 items left</span>
-        <label class="task-filter__item">
-        	<input type="radio" checked name="active-button" name="active-button" aria-label="all tasks">All</input>
-        </label>
-        <label class="task-filter__item">
-  			<input type="radio" name="active-button" type="submit" aria-label="active tasks">Active</input>
-        </label>
-        <label class="task-filter__item">
-  			<input type="radio" name="active-button" type="submit" aria-label="completed tasks">Completed</input>
-        </label>
-  		<button name="clear-button" type="submit" aria-label="clear completed tasks">Clear completed</button>
+    	<div>
+  			<span>3 items left</span>
+        </div>
+        <div>
+        	<label class="task-filter__item">
+        		<input type="radio" checked name="active-button" name="active-button" aria-label="all tasks">All</input>
+        	</label>
+        	<label class="task-filter__item">
+  				<input type="radio" name="active-button" type="submit" aria-label="active tasks">Active</input>
+       	 	</label>
+        	<label class="task-filter__item">
+  				<input type="radio" name="active-button" type="submit" aria-label="completed tasks">Completed</input>
+        	</label>
+         </div>
+         <div>
+  			<button name="clear-button" type="submit" aria-label="clear completed tasks">Clear completed</button>
+         </div>
     </footer>    
   </body>
   </html>
+  
