@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>todos</title>
+  </head>
+  <body>
+    <h1>todos</h1>
+    <header class="todo-app__header">
+  		<div class="input-accept">
+			<button aria-label="select all">√</button>
+        	<input name="textfield" type="text" aria-label="What needs to be done?" placeholder="What needs to be done?">
+		</div>
+    </header>
+    <main class="todo-app__main-controls">
+    	<section>
+			<input type="checkbox" name="HTML" aria-label="edit HTML variant" checked>
+            <span aria-label="HTML">HTML</span>
+    	    <button aria-label="close HTML task">&times</button></p>
+        </section>
+        <section>
+			<input type="checkbox" name="CSS" aria-label="edit CSS variant" checked>
+  			<span><s>CSS</s></span> 
+  			<button aria-label="close CSS task">&times</button></p>
+        </section>
+        <section>
+  			<input type="checkbox" name="JS" aria-label="edit JS variant" checked>
+  			<span>JS</span>
+  			<button aria-label="close JS task">&times</button></p>
+        </section>
+        <section>
+  			<input type="checkbox" name="JStools" aria-label="edit JS tools variant" checked>
+  			<span>JS tools</span>
+  			<button aria-label="close JS tools task">&times</button></p>
+        </section>  
+    </main>
+    <footer class="todo-app__actions-bar">
+    	<div>
+  			<span>3 items left</span>
+        </div>
+        <div>
+        	<label class="task-filter__item">
+        		<input type="radio" checked name="active-button" name="active-button" aria-label="all tasks">All</input>
+        	</label>
+        	<label class="task-filter__item">
+  				<input type="radio" name="active-button" type="submit" aria-label="active tasks">Active</input>
+       	 	</label>
+        	<label class="task-filter__item">
+  				<input type="radio" name="active-button" type="submit" aria-label="completed tasks">Completed</input>
+        	</label>
+         </div>
+         <div>
+  			<button name="clear-button" type="submit" aria-label="clear completed tasks">Clear completed</button>
+         </div>
+    </footer>    
+  </body>
+  </html>
+  
