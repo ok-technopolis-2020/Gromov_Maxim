@@ -19,14 +19,6 @@ h1 {
   font-size: 100px;
   font-weight: 200;
   color: #cccccc;
-  position: absolute;
-  width: 245px;
-  height: 21px;
-  left: 393px;
-  top: 46px;
-  font-family: "Roboto", sans-serif;
-  line-height: 21px;
-  color: #CCCCCC;
 }
 
 .container {
@@ -75,6 +67,7 @@ h1 {
 }
 
 .choose-button {
+  background: no-repeat center url(toogle-icon.svg);
   cursor: pointer;
   position: relative;
   outline-color: #818181;
@@ -149,12 +142,12 @@ h1 {
 }
 
 ..todo-app__complete-button:hover::before {
-  background: no-repeat center white url(/done-not-active.svg);
+  background: no-repeat center white url(done-not-active.svg);
   color: #5dc2af;
 }
 
 .todo-app__complete-button:checked::before {
-  background: no-repeat center white url(/done.svg);
+  background: no-repeat center white url(done.svg);
   border: 1px solid #5dc2af;
   color: #5dc2af;
 }
@@ -195,11 +188,11 @@ input.todo-app__text {
 }
 
 .todo-app__remove-task-button:focus {
-  background: no-repeat center url(/remove-button.svg);
+  background: no-repeat center url(remove-button.svg);
 }
 
 .todo-app__item:hover > .todo-app__remove-task-button {
-  background: no-repeat center url(/remove-button.svg);
+  background: no-repeat center url(remove-button.svg);
 }
 
 .todo-app__remove-task-button:hover {
