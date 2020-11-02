@@ -160,13 +160,11 @@ h1 {
 }
 
 .todo-app__text {
-  border: none;
   cursor: text;
   display: flex;
   flex-grow: 1; 
   word-break: break-word;
   font-size: 24px;
-  table-layout: fixed;
   word-wrap: break-word;
   font-family: "Roboto", sans-serif;
   background-color: transparent;
@@ -184,8 +182,8 @@ input.todo-app__text {
 
 .todo-app__remove-task-button {
   outline-color: #818181;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: transparent;
 }
