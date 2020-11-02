@@ -1,59 +1,143 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>todos</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet"/>
+    <title>Todo</title>
   </head>
-  <body>
-    <h1>todos</h1>
-    <header class="todo-app__header">
-  		<div class="input-accept">
-			<button aria-label="select all">√</button>
-        	<input name="textfield" type="text" aria-label="What needs to be done?" placeholder="What needs to be done?">
-		</div>
-    </header>
-    <main class="todo-app__main-controls">
-    	<section>
-			<input type="checkbox" name="HTML" aria-label="edit HTML variant" checked>
-            <span aria-label="HTML">HTML</span>
-    	    <button aria-label="close HTML task">&times</button></p>
-        </section>
-        <section>
-			<input type="checkbox" name="CSS" aria-label="edit CSS variant" checked>
-  			<span><s>CSS</s></span> 
-  			<button aria-label="close CSS task">&times</button></p>
-        </section>
-        <section>
-  			<input type="checkbox" name="JS" aria-label="edit JS variant" checked>
-  			<span>JS</span>
-  			<button aria-label="close JS task">&times</button></p>
-        </section>
-        <section>
-  			<input type="checkbox" name="JStools" aria-label="edit JS tools variant" checked>
-  			<span>JS tools</span>
-  			<button aria-label="close JS tools task">&times</button></p>
-        </section>  
-    </main>
-    <footer class="todo-app__actions-bar">
-    	<div>
-  			<span>3 items left</span>
-        </div>
-        <div>
-        	<label class="task-filter__item">
-        		<input type="radio" checked name="active-button" name="active-button" aria-label="all tasks">All</input>
-        	</label>
-        	<label class="task-filter__item">
-  				<input type="radio" name="active-button" type="submit" aria-label="active tasks">Active</input>
-       	 	</label>
-        	<label class="task-filter__item">
-  				<input type="radio" name="active-button" type="submit" aria-label="completed tasks">Completed</input>
-        	</label>
-         </div>
-         <div>
-  			<button name="clear-button" type="submit" aria-label="clear completed tasks">Clear completed</button>
-         </div>
-    </footer>    
+
+  <body>      
+    <div class="main-part">
+      <h1 class="title">todos</h1>
+
+      <div class="container">
+        <header class="input-area">
+          <button class="choose-button" aria-label="choose all"></button>
+          <input class="input-area__input" type="text" placeholder="What needs to be done?"
+            aria-label="What needs to be done?">
+        </header>
+
+       <main  class="todo-app__frame" role="main">
+        <ul class="todo-app todo-app_no-fields">
+          <li class="todo-app__item">
+            <input
+              type="checkbox"
+              name="HTML"
+              class="todo-app__complete-button"
+              aria-label="complete task"
+            />
+            <input type="text" class="todo-app__text" value="HTML"/>
+            <span class="todo-app__text">HTML</span>
+            <button
+              class="todo-app__remove-task-button"
+              aria-label="remove item"
+            ></button>
+          </li>
+
+          <li class="todo-app__item">
+            <input
+              type="checkbox"
+              class="todo-app__complete-button"
+              aria-label="complete task"
+              checked
+            />
+            <input type="text" class="todo-app__text" value="CSS"/>
+            <span class="todo-app__text">CSS</span>
+            <button
+              class="todo-app__remove-task-button"
+              aria-label="remove item"
+            ></button>
+          </li>
+
+          <li class="todo-app__item">
+            <input
+              type="checkbox"
+              name="JS"
+              class="todo-app__complete-button"
+              aria-label="complete task"
+            />
+            <input type="text" class="todo-app__text" value="JS"/>
+            <span class="todo-app__text">JS</span>
+            <button
+              class="todo-app__remove-task-button"
+              aria-label="remove item"
+            ></button>
+          </li>
+
+          <li class="todo-app__item">
+            <input
+              type="checkbox"
+              name="JStools"
+              class="todo-app__complete-button"
+              aria-label="complete task"
+            />
+            <input type="text" class="todo-app__text" value="JS tools"/>
+            <span class="todo-app__text">JS tools</span>
+            <button
+              class="todo-app__remove-task-button"
+              aria-label="remove item"
+            ></button>
+          </li>
+
+
+
+        </ul>
+        </main>
+
+        <footer>
+          <div class="control-panel" role="toolbar">
+            <span class="control-panel__left-intems-info" role="note">3 items left
+            </span>
+
+            <div class="control-panel__tabs" role="group">
+              <div>
+                <input
+                  type="radio"
+                  class="control-panel__task-filter"
+                  aria-label="all tasks"
+                  value="All"
+                  name="filter"
+                  id="all"
+                  checked
+                />
+                <label for="all">All</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  class="control-panel__task-filter"
+                  aria-label="active tasks"
+                  value="Active"
+                  name="filter"
+                  id="active"
+                />
+                <label for="active">Active</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  class="control-panel__task-filter" 
+
+                  
+                  value="Completed"
+                  aria-label="completed tasks"
+                  name="filter"
+                  id="completed"
+                />
+                <label for="completed">Completed</label>
+              </div>
+            </div>
+
+            <input
+              type="button"
+              class="control-panel__clear-tasks-button"
+              value="Clear completed"
+            />
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
-  </html>
-  
+</html>
