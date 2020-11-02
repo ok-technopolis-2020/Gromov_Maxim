@@ -6,6 +6,7 @@ html, body {
 
 body {
   display: grid;
+  min-width: 479px;
   justify-content: center;
   align-items: center;
   grid-template-columns: minmax(500px, 563px);
@@ -99,6 +100,7 @@ h1 {
   list-style: none;
   min-height: 320px;
   padding: 0;
+  margin: 0;
 }
 
 .todo-app__item {
@@ -160,8 +162,9 @@ h1 {
 .todo-app__text {
   border: none;
   cursor: text;
-  width: 100%;
-  display: table;
+  display: flex;
+  flex-grow: 1; 
+  word-break: break-word;
   font-size: 24px;
   table-layout: fixed;
   word-wrap: break-word;
@@ -181,8 +184,8 @@ input.todo-app__text {
 
 .todo-app__remove-task-button {
   outline-color: #818181;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: transparent;
 }
@@ -258,3 +261,8 @@ input.todo-app__text {
 .control-panel__task-filter:checked ~ label {
   border: 1px solid #cccccc;
 }
+
+.control-panel__task-filter:focus ~ label {
+  border: 1px solid #cccccc;
+}
+
