@@ -1,0 +1,106 @@
+.todo-app {
+  background-color: #ffffff;
+  list-style: none;
+  min-height: 320px;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-app__item {
+  display: grid;
+  grid-template-columns: 40px auto 20px;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  gap: 10px;
+  padding: 13px 11px;
+  min-height: 64px;
+}
+
+.todo-app__item:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.todo-app__complete-button {
+  outline-color: #818181;
+  -webkit-appearance: none;
+}
+
+.todo-app__complete-button::before {
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin-left: 12px;
+  cursor: pointer;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  background-size: cover;
+  border: 1px solid  #cccccc;
+  transform: translate(-50%, -50%);
+}
+
+.todo-app__complete-button:focus::before {
+  outline: 2px solid #818181;
+}
+
+..todo-app__complete-button:hover::before {
+  background: no-repeat center white url(/svg/done-not-active.svg);
+  color: #5dc2af;
+}
+
+.todo-app__complete-button:checked::before {
+  background: no-repeat center white url(/svg/done.svg);
+  border: 1px solid #5dc2af;
+  color: #5dc2af;
+}
+
+.todo-app__complete-button:checked ~ .todo-app__text {
+  text-decoration: line-through;
+  color: #cccccc;
+}
+
+.todo-app__text {
+  cursor: text;
+  display: flex;
+  flex-grow: 1; 
+  word-break: break-word;
+  font-size: 24px;
+  word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  outline-color: #818181;
+  color: #666666;
+}
+
+input.todo-app__text {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.todo-app__remove-task-button {
+  outline-color: #818181;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+.todo-app__remove-task-button:focus {
+  background: no-repeat center url(/svg/remove-button.svg);
+}
+
+.todo-app__item:hover > .todo-app__remove-task-button {
+  background: no-repeat center url(/svg/remove-button.svg);
+}
+
+.todo-app__remove-task-button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 100ms;
+}
