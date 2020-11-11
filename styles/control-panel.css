@@ -1,0 +1,61 @@
+.control-panel {
+  background-color: #ffffff;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 92px auto 124px;
+  align-items: center;
+  padding: 12px 12px;
+}
+
+
+.control-panel__clear-tasks-button {
+  color: #888888;
+  border: none;
+  font-size: 14px;
+  justify-self: right;
+  cursor: pointer;
+  background-color: transparent;
+  outline-color: #818181;
+  padding: 3px;
+}
+
+.control-panel__clear-tasks-button:hover {
+  background-color: #fafafa;
+}
+
+.control-panel__clear-tasks-button:focus {
+  background-color: #fafafa;
+}
+
+.control-panel__tabs {
+  display: flex;
+}
+
+.control-panel__left-intems-info {
+  font-size: 14px;
+  color: #888888;
+}
+
+.control-panel__task-filter ~ label {
+  color: #888888;
+  border-radius: 5px;
+  padding: 3px 9px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.control-panel__task-filter:not(:checked) ~ label:hover {
+  background-color: #fafafa;
+}
+
+.control-panel__task-filter {
+  appearance: none;
+}
+
+.control-panel__task-filter:checked ~ label {
+  border: 1px solid #cccccc;
+}
+
+.control-panel__task-filter:focus ~ label {
+  border: 1px solid #cccccc;
+}

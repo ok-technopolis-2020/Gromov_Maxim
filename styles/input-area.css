@@ -1,0 +1,38 @@
+.input-area {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 68px;
+  z-index: 100;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+}
+
+.choose-button {
+  background: no-repeat center url(/svg/toogle-icon.svg);
+  cursor: pointer;
+  position: relative;
+  outline-color: #818181;
+  border: none;
+  width: 60px;
+  height: 100%;
+}
+
+.choose-button:hover {
+  background-color: #fafafa;
+}
+
+.input-area__input {
+  outline-color: #818181;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #666666;
+  padding-left: 1rem;
+  font-size: 24px;
+  flex-grow: 1;
+}
+
+.input-area__input::placeholder {
+  color: #cccccc;
+}
